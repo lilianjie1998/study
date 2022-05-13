@@ -236,3 +236,4 @@ $ git push -u origin master
 
 git rm --cached 文件名
 
+![image](./images/24.png)
