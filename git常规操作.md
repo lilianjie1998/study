@@ -1,4 +1,4 @@
-# Windows系统 安装git
+# 一，Windows系统 安装git
 
  
 
@@ -10,7 +10,7 @@
 
  
 
-#  流程
+#  二，流程
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-# Git操作的具体步骤
+# 三，Git操作的具体步骤
 
 ## 1，cd 路径  进入当前目录
 
@@ -34,7 +34,7 @@
 
 **git config --global user.name "lilianjie1998"**
 
-**git config --global user.email ["lilianjie1998@163.com"](mailto:\)          例如：**![image](./images/6.png)
+**git config --global user.email ["lilianjie1998@163.com"](mailto:\) ===========>>例如：**![image](./images/6.png)
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-**.git  文件存储当前项目的所有版本信息**
+**.git  文件存储当前项目的所有版本信息===========>>例如：**
 
 ![image](./images/7.png)
 
@@ -56,7 +56,7 @@
 
 **git add * 提交所有文件**
 
-**git commit -m “这一次提交的描述”           例如：**![image](./images/8.png)
+**git commit -m “这一次提交的描述”===========>>例如：**![image](./images/8.png)
 
 
 
@@ -64,7 +64,7 @@
 
 
 
-**git status          例如：**![image](./images/9.png)
+**git status===========>>例如：**![image](./images/9.png)
 
 
 
@@ -72,15 +72,15 @@
 
 
 
-**git checkout 文件名           例如：**![image](./images/10.png)
+**git checkout 文件名===========>>例如：**![image](./images/10.png)
 
 
 
-7，查看工作区和暂存区版本区别
+## 7，查看工作区和暂存区版本区别
 
 
 
- **git diff   例如：**![image](./images/11.png)
+ **git diff===========>>例如：**![image](./images/11.png)
 
  
 
@@ -92,7 +92,7 @@
 
 ## 9，查看已经提交的历史版本
 
-**git log          例如：**![image](./images/12.png)
+**git log===========>>例如：**![image](./images/12.png)
 
  
 
@@ -100,7 +100,7 @@
 
 
 
- **git reset --hard 版本号          例如：**![image](./images/13.png)
+ **git reset --hard 版本号===========>> 例如：**![image](./images/13.png)
 
 
 
@@ -110,7 +110,7 @@
 
 **①ssh-keygen -t rsa -C “你的github邮箱”**
 
-**②密钥所在位置Windows电脑路径   /c/Users/Admin/.ssh/id_rsa.pub          例如：****![image](./images/14.png)
+**②密钥所在位置Windows电脑路径   （/c/Users/Admin/.ssh/id_rsa.pub）===========>>例如：**![image](./images/14.png)
 
 **③将pub文件内容，拷贝到github上授权**
 
@@ -124,7 +124,7 @@
 
 **git remote add origin https://github.com/lilianjie1998/testDemo.git**
 
-**git push -u origin master          例如：****![image](./images/15.png)
+**git push -u origin master===========>>例如：**![image](./images/15.png)
 
 **git push origin master的意思就是上传本地当前分支代码到master分支。git push是上传本地所有分支代码到远程对应的分支上。**
 
@@ -180,7 +180,7 @@
 
 
 
- **git clone 项目url          例如：**
+ **git clone 项目url===========>>例如：**
 
 ![image](./images/16.png)
 
@@ -192,7 +192,7 @@
 
 **~/Desktop/test/目录为新建目录，用于测试克隆，同步使用**
 
- **git pull          例如：**
+ **git pull===========>>例如：**
 
 ![image](./images/17.png)![image](./images/18.png)![image](./images/19.png)
 
@@ -200,11 +200,11 @@
 
 ## 15，删除github仓库上的文件。
 
-**①github上文件         例如：**
+**①github上文件===========>>例如：**
 
 ![image](./images/20.png)
 
-**②从工作区的本地磁盘目录删除GitHub上的test1.md文件           例如：**![image](./images/21.png)
+**②从工作区的本地磁盘目录删除GitHub上的test1.md文件===========>>例如：**![image](./images/21.png)
 
 ![image](./images/22.png)
 
@@ -212,6 +212,6 @@
 
 ## 16，如果想把文件从暂存区域移除，但仍然希望保留在当前工作目录中，换句话说，仅是从跟踪清单中删除，使用 **--cached** 选项即可：
 
-**git rm --cached 文件名          例如：**
+**git rm --cached 文件名===========>>例如：**
 
 ![image](./images/24.png)
