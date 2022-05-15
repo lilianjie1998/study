@@ -14,7 +14,7 @@
 
 
 
-![流程图片](../images/1.png) ![流程图片](./images/4.png) ![流程图片](./images/2.png)![流程图片](./images/4.png)![流程图片](./images/3.png)
+![流程图片](./images/1.png) ![流程图片](./images/4.png) ![流程图片](./images/2.png)![流程图片](./images/4.png)![流程图片](./images/3.png)
 
 
 
