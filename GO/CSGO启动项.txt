@@ -1,0 +1,1 @@
+-perfectworld steam +exec aa.cfg
