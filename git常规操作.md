@@ -33,9 +33,9 @@ Git gui--git可视化界面
 ## 2，配置git基本操作
 
 ```
-git config --global user.name "lilianjie1998"
+git config --global user.name "用户名"
 
-git config --global user.email "lilianjie1998@163.com"===========>>例如：
+git config --global user.email "邮箱"===========>>例如：
 ```
 
 ![image](./images/6.png)
@@ -145,7 +145,7 @@ github头像位置展开>settings>SSH and GPG keys >>New SSH key
 ## 12，暂存区 => 远程仓库
 
 ```
-git remote add origin https://github.com/lilianjie1998/testDemo.git
+git remote add origin 仓库url .git结尾url
 
 git push -u origin master===========>>例如：
 ```
