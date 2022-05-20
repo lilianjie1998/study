@@ -146,7 +146,7 @@ github头像位置展开>settings>SSH and GPG keys >>New SSH key
 
 ```
 git remote add origin 仓库url .git结尾url
-(git remote set-url origin 仓库url；  git remote -v验证)
+(更改本地的'远程仓库url'  git remote set-url origin 仓库url；  git remote -v验证)
 
 git push -u origin master===========>>例如：
 ```
