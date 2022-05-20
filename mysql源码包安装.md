@@ -80,3 +80,56 @@ mysql> quit
 Bye
 ```
 
+## 六，数据库的使用命令
+
+```
+查看表结构
+describe user;
+
+创建新的库
+create database auth；
+
+创建新的表
+create table user（字段1 类型，字段2 类型，....，primary key （主键名））；
+
+删除表
+drop table user；
+删除库
+drop database auth；
+
+插入数据
+insert into 表名（字段1，字段2,...） values(字段1的值，字段2的值，....)；
+
+查询数据
+select 字段1，字段2，··· from 表名 where 条件表达式
+
+修改数据
+update 表名 set 字段名1=字段值1 where 条件表达式
+
+更改密码
+update mysql.user set password=PASSWORD('123456') where user='root';
+
+flush privileges;  刷新用户授权
+
+授权
+grant 权限列表 on 库名.表名 to 用户名@来源地址 [ identified by '密码' ]
+
+权限列表：
+select查询
+insert插入
+update更新
+delete删除
+
+create创建
+alter修改
+drop删除mysql数据库表结构权限
+
+查看权限
+show grants for 用户名@来源地址
+撤销权限
+revoke 权限列表 on 数据库名.表名 from 用户名@来源地址
+
+备份数据库
+tar zcf /backup/mysql_all-$(date +%F).tar.gz /usr/local/mysql/data/
+```
+
