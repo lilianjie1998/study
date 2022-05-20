@@ -66,7 +66,7 @@ Starting MySQL.Logging to '/usr/local/mysql/data/error.log'.
 
 ```
 添加环境变量：
-将内容export PATH=/usr/local/mysql/bin:$PATH添加到 /etc/profile文件的结尾
+将内容export PATH=$PATH:/usr/local/mysql/bin添加到 /etc/profile文件的结尾
 执行[root@10_128 ~]# source /etc/profile
 
 [root@10_128 ~]# mysql -u root -p
