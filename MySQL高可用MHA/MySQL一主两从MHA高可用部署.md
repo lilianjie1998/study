@@ -839,7 +839,7 @@ hostname=10.10.0.131
 port=3306
 ```
 
-![31](C:\Users\Admin\Desktop\MySQL高可用MHA\img\31.jpg)
+![31](./img/31.jpg)
 
 
 
