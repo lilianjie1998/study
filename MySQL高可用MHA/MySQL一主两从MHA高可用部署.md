@@ -782,12 +782,12 @@ mysql> insert into test.test values(6,'xi6');
 ### 3.4 故障修复
 
 ```shell
-1）#修复master
-[root@master ~]# vim /etc/my.cnf
+#1）#修复master
+#[root@master ~]# vim /etc/my.cnf
 #添加如下内容
-relay-log = relay-log-bin
-relay-log-index = slave-relay-bin.index
-relay_log_purge=0
+#relay-log = relay-log-bin
+#relay-log-index = slave-relay-bin.index
+#relay_log_purge=0
 
 [root@master ~]# systemctl restart mysqld
 ```
