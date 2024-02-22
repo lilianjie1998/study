@@ -161,7 +161,7 @@ export PATH=$PATH:/usr/local/mysql/bin
 [root@master ~]# service mysqld start
 
 [root@master ~]# mysql -u root -p
-mysql> set password=password('li@1998..');
+mysql> set password=password('lilj123');
 ```
 
 #### 5.配置主从同步
@@ -226,6 +226,9 @@ mysql -uroot -p123456
 mysql> grant replication slave on *.* to 'myslave'@'10.10.0.%' identified by '123456';
 #manager使用
 mysql> grant all privileges on *.* to 'mha'@'10.10.0.%' identified by 'manager';
+
+#客户端test使用
+mysql> grant all privileges on *.* to 'lilj'@'10.10.0.%' identified by 'lilj123';
 
 #防止从库通过主机名连接不上主库
 mysql> grant all privileges on *.* to 'mha'@'master' identified by 'manager';
@@ -756,7 +759,7 @@ port=3306
 #检查app1.cnf配置文件
 [root@manager ~]# vim /etc/masterha/app1.cnf
 
-[root@test ~]# mysql -u lilj -h 10.10.0.188 -pli@1998..
+[root@test ~]# mysql -u lilj -h 10.10.0.188 -plilj
 #模拟故障过程中新增数据、在新的主库上插入数据
 mysql> insert into test.test values(4,'xi4');
 mysql> insert into test.test values(5,'xi5');
